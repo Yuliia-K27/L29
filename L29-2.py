@@ -76,3 +76,4 @@ class AuthSystem:
 auth_system = AuthSystem()
 auth_system.register_user()
 auth_system.login()
+
