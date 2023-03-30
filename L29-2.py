@@ -13,6 +13,11 @@ def register():
     if login in user_data:
         print("Користувач з таким логіном вже існує!")
         return
+    
+    # перевірка колізій
+    if hashed_password in user_data.values():
+        print("Цей пароль вже використовується!")
+        return
 
     # запит пароля і його хешування за допомогою SHA-256
     password = input("Введіть пароль: ")
